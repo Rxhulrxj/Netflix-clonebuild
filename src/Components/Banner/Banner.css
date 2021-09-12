@@ -1,0 +1,49 @@
+.banner {
+  background-size: cover;
+  height: 700px;
+  color: red;
+}
+.content{
+    padding-top:300px;
+    height: 190px;
+    padding-left: 50px;
+}
+.title{
+    font-size: 3rem;
+    font-weight:800;
+    padding-bottom: 0.3rem;
+}
+.year-details{
+    color: white;
+    padding-left: 40px;
+}
+.button{
+    color: black;
+    border:none;
+    outline: white;
+    font-weight: 700;
+    border-radius:  5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: white;
+    transition: transform .2s;
+    justify-content: space-between;
+    padding: auto;
+
+}
+.button:hover{
+    color: #000;
+    background-color: red;
+    transform: scale(1.1);
+}
+.Descrption{
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    height: 80px;
+    max-width: 360px;
+
+}
