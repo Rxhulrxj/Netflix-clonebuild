@@ -3,6 +3,7 @@ import '../screens/App.css';
 import NavBar from '../Components/NavBar/NavBar';
 import Tvban from '../Components/Banner/Tvban';
 import Tvrowpost from '../Components/Rowpost/Tvrowpost';
+import Footer from '../screens/Footer';
 import {Tvtoprated,populartv,tvonair,Tvrec} from '../urls';
 function Tv() {
     return (
@@ -13,6 +14,7 @@ function Tv() {
         <Tvrowpost url ={Tvrec} title ="Recommended" />
         <Tvrowpost url ={populartv} title ="Popular This Week" />
         <Tvrowpost url ={tvonair} title ="More Show You Will Love" />
+        <Footer />
         
         </div>
     )

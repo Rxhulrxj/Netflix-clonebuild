@@ -3,6 +3,7 @@ import '../screens/App.css';
 import Banner from '../Components/Banner/Banner';
 import NavBar from '../Components/NavBar/NavBar';
 import Rowpost from '../Components/Rowpost/Rowpost';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
      <Rowpost url={Comedy} title="Comedy Movies" isSmall />
      <Rowpost url={Romance} title="Romantic Movies" isSmall />
      <Rowpost url={documentaries} title="Documentaries" isSmall />
+     <Footer />
     </div>
   );
 }

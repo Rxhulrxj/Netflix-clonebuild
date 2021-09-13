@@ -1,0 +1,22 @@
+.footer {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin:auto;
+}
+.git{
+    right:0;
+}
+.footer__img{
+    display:flex;
+    justify-content: space-between;
+}
+.credits{
+    color:#fff;
+    text-align: center;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.credits:hover{
+    text-decoration: underline;
+}

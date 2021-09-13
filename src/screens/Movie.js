@@ -4,6 +4,7 @@ import Movieban from '../Components/Banner/Movieban';
 import NavBar from '../Components/NavBar/NavBar';
 import Movierowpost from '../Components/Rowpost/Movierowpost';
 import {movienow,moviepopular,movietop,movielat,action,Romance,Horror,Comedy,documentaries} from '../urls';
+import Footer from './Footer';
 
 function Movie() {
     return (
@@ -19,6 +20,7 @@ function Movie() {
         <Movierowpost  url ={Horror} title ="Horror Movies" isSmall/>
         <Movierowpost  url ={Comedy} title ="Comedy Movies" isSmall/>
         <Movierowpost  url ={documentaries} title ="Documentaries" isSmall/>
+        <Footer />
         
         </div>
     )
