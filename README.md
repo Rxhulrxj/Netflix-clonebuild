@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [Live Demo](https://netflix-clonebuild.web.app)
 
+[Demo](#Demo)
+
 [Tech Stack](#tech-stack)
 
 [Author](#author)
@@ -12,6 +14,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [License](#license)
 
 ---
+
+## Demo
+
+-Video Demo 
+
+https://user-images.githubusercontent.com/88202340/133092420-e84aed28-24f1-4f4d-adc9-27e75a1fcc60.mp4
+
+
+Photo Demo
+
+![Screenshot (63)](https://user-images.githubusercontent.com/88202340/133092593-24a8564f-a3d2-4d35-83ac-532256cc44f7.png)
+
+
+
 
 ## Tech Stack
 
