@@ -1,44 +1,86 @@
+## Netflix-clone
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+## Quick Links
 
-In the project directory, you can run:
+[Live Demo](https://netflix-clonebuild.web.app)
 
-### `npm start`
+[Demo](#Demo)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Tech Stack](#tech-stack)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[Author](#author)
 
-### `npm test`
+[License](#license)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Demo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Video Demo 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+https://user-images.githubusercontent.com/88202340/133092420-e84aed28-24f1-4f4d-adc9-27e75a1fcc60.mp4
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Photo Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Screenshot (63)](https://user-images.githubusercontent.com/88202340/133092593-24a8564f-a3d2-4d35-83ac-532256cc44f7.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React](https://github.com/facebook/react) 
+  - Create-react-app with highly complex frontend structure
+- [Redux](https://redux.js.org/) 
+  - State management and redux thunk for asynchronous api calls
+- [Firebase](https://firebase.google.com/) 
+  - Backend and database with firestore for users
+- [TMDB API](https://www.themoviedb.org/?language=en-US)
+  - Movie service API
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start) 
+  - Complex and dynamic route generation 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Implementation Highlights
+
+Netflix clone made with advanced react, redux & firebase which uses redux thunk to asynchronously fetch movie data of over 30 thousand movies from Tmdb api. Features include a  user signup and signin, dynamically generated movie and tv show pages and an interactive UI replicated from the original netflix app.
+
+### User Stories
+
+- Users can safely sign up and sign in using email.
+- Collections of popular movies and tvshows for recommendations
+- Movie and TV Pages dynamically generated for every single movie
+- Carousel created from scratch by using jquery
+- Original netflix UI replicated with highly organized.
+
+
+
+
+### Current Plans for Expansion
+
+- Implement more features as a personal practice project
+- Implementing search feature,add to list feature,profile-by-profile recommendations.
+- individual pages showing imdb rating,cast crew,trailer Links on movies and TV shows.
+- Add user profile data, profile picture and personal data setup
+- Add paginations and setup category sorting
+- Add python scraper to customize recommendations for each user
+- Move backend and database to node and express.
+- Make site more optimized and better responsive
+
+---
+
+## Author
+
+- Rahul Raj N
+
+
+---
+
+## License
+
+- Full credit for API data to TMDB API.
+
+---
