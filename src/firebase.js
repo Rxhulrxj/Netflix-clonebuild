@@ -2,6 +2,7 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import "firebase/performance";
 
 
 const firebaseConfig = {
@@ -14,6 +15,7 @@ const firebaseConfig = {
     measurementId: "G-0PL2DC1K9E"
   };
   const firebaseApp =firebase.initializeApp(firebaseConfig);
+  const perf = firebase.performance();
   const db = firebaseApp.firestore();
   const auth = firebase.auth();
 
