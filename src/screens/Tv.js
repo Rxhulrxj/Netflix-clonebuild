@@ -11,9 +11,9 @@ function Tv() {
         <NavBar/>
         <Tvban />
         <Tvrowpost url ={Tvtoprated} title ="Top Rated" />
-        <Tvrowpost url ={Tvrec} title ="Recommended" />
-        <Tvrowpost url ={populartv} title ="Popular This Week" />
-        <Tvrowpost url ={tvonair} title ="More Show You Will Love" />
+        <Tvrowpost url ={Tvrec} title ="Recommended" isSmall/>
+        <Tvrowpost url ={populartv} title ="Popular This Week" isSmall/>
+        <Tvrowpost url ={tvonair} title ="More Show You Will Love" isSmall/>
         <Footer />
         
         </div>

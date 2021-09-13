@@ -1,13 +1,16 @@
 .banner {
   background-size: cover;
-  height: 710px;
+  height: 1000px;
   color: #FAF1E6;
   background-position: center;
+  width: auto ;
+  max-width: 100% ;
+  
 }
 .content{
-    padding-top:300px;
+    padding-top:400px;
     height: 190px;
-    padding-left: 50px;
+    padding-left: 0;
 }
 .title{
     font-size: 3rem;
@@ -45,6 +48,6 @@
     padding-top: 1rem;
     font-size: 0.9rem;
     height: 80px;
-    max-width: 400px;
+    max-width: 250px;
 
 }
