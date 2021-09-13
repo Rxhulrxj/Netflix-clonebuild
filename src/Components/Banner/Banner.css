@@ -23,10 +23,10 @@
     border:none;
     outline: white;
     font-weight: 700;
-    border-radius:  5px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top:0.5rem;
+    border-radius:  10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:10px;
     padding-bottom: 0.5rem;
     background-color: white;
     transition: transform .2s;
