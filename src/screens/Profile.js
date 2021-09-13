@@ -11,7 +11,7 @@ function Profile() {
         <div className="profile">
             <NavBar />
             <div className="profile_body">
-                <h1>Edit Profile</h1>
+                <h1> Profile</h1>
                 <div className="profile_info">
                     <img src="https://i.pinimg.com/originals/0d/dc/ca/0ddccae723d85a703b798a5e682c23c1.png" alt="avatar" />
                     <div className="profile__details">
