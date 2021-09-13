@@ -7,6 +7,8 @@ import Profile from './screens/Profile';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {login ,logout ,selectUser} from "./features/counter/userSlice";
+import Movie from './screens/Movie';
+import Tv from './screens/Tv';
 
   function Main() {
       const user = useSelector(selectUser);
@@ -37,6 +39,12 @@ import {login ,logout ,selectUser} from "./features/counter/userSlice";
                   <Switch>
                       <Route exact path = '/profile'>
                           <Profile />
+                      </Route>
+                      <Route exact path = '/Movie'>
+                          <Movie />
+                      </Route>
+                      <Route exact path = '/TV'>
+                          <Tv />
                       </Route>
                       <Route exact path="/">
                       <App />

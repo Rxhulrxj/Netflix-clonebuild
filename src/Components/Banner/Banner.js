@@ -37,7 +37,7 @@ function Banner(){
         className="banner">
             <div className="content" >
                 <h1 className="title">{movie?.title||movie?.name||movie?.original_name}</h1>
-                {/* <h4 className='year-details'>{movie ? movie.first_air_date.split('-')[0] : ""}|{movie ? movie.vote_average : ""}&nbsp;&nbsp;<i className="fab fa-imdb"></i></h4> */}
+                <h4 className='year-details'>{movie ? movie.vote_average : ""}☆&nbsp;&nbsp;<i className="fab fa-imdb"></i></h4> 
                  <div className="btn-toolbar">
                 {/* {shown ? <VideoModal src="https://www.youtube.com/embed/htqXL94Rza4"/> : null} */}
                     {/* <button className="button" onClick={() => setShown(!shown)} ><i className="fas fa-play"></i>  Play</button>&nbsp; */}

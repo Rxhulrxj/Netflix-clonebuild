@@ -1,7 +1,8 @@
 .banner {
   background-size: cover;
-  height: 700px;
-  color: red;
+  height: 710px;
+  color: #FAF1E6;
+  background-position: center;
 }
 .content{
     padding-top:300px;
@@ -44,6 +45,6 @@
     padding-top: 1rem;
     font-size: 0.9rem;
     height: 80px;
-    max-width: 360px;
+    max-width: 400px;
 
 }

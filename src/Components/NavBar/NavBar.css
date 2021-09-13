@@ -27,3 +27,27 @@
     max-height: 30px;
     padding-top: 5px;
 }
+.movie__nav{
+    color: #fff;
+    left: 150px;
+    padding-top: 5px;
+    position: fixed;
+    text-decoration: underline;
+    opacity: 1;
+    cursor: pointer;
+}
+.movie__nav:hover{
+    opacity: 0.8;
+}
+.tv__nav{
+    color: #fff;
+    left: 220px;
+    padding-top: 5px;
+    position: fixed;
+    text-decoration: underline;
+    opacity: 1;
+    cursor: pointer;
+}
+.tv__nav:hover{
+    opacity: 0.8;
+}
