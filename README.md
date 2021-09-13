@@ -31,7 +31,7 @@ Photo Demo
 
 ## Tech Stack
 
-- [React](https://github.com/facebook/react) 
+- [React](https://reactjs.org) 
   - Create-react-app with highly complex frontend structure
 - [Redux](https://redux.js.org/) 
   - State management and redux thunk for asynchronous api calls
@@ -68,7 +68,7 @@ Netflix clone made with advanced react, redux & firebase which uses redux thunk 
 - Add paginations and setup category sorting
 - Add python scraper to customize recommendations for each user
 - Move backend and database to node and express.
-- Make site more optimized and better responsive
+- Make site more optimized( by lazy method) and better responsive.
 
 ---
 
