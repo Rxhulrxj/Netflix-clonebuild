@@ -44,7 +44,7 @@ return (
                 <input ref = {passwordRef} placeholder="Password" type={passwordShown ? "text" : "password"} minLength ='4' maxLength="16" required/>
                 <i className={passwordShown ? "far fa-eye-slash" : "far fa-eye"} id="eye" onClick={togglePasswordVisiblity}></i>
                 <button type="submit" onClick={signIn}>Sign In</button>
-                <h4><span className="Signup__gray">New to Netflix?</span><span className="Signup__Link" onClick={register}>Sign Up Now</span></h4>
+                <h4><span className="Signup__gray">New to Netflix?</span><span className="Signup__Link" onClick={register}>Sign Up Now</span><br />(fill up the above details and click sign up now to register)</h4>
             </form>
         </div>
     )

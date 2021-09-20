@@ -6,7 +6,7 @@
     background-color:rgba(0,0,0.85);
 }
 .signup > form{
-    display: flex;
+    display: grid;
     flex-direction: column;
 }
 .signup > form > h1{
@@ -48,9 +48,8 @@
 #eye{
     position: absolute;
     display: flex;
-    top: 48%;
-    right: 36%;
-    z-index: 1;
+    top: 45%;
+    right: 35%;
     font-weight: 600;
     cursor: pointer;
     color: #000;
