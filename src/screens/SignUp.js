@@ -1,8 +1,9 @@
 import React, { useRef, useState} from 'react'
-import {auth} from '../firebase';
+import {auth, sendPasswordResetEmail} from '../firebase';
 import './Signup.css';
 
 function SignUp() {
+    const [email, setEmail] = useState("");
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
     const register = (e) => {
@@ -40,11 +41,14 @@ return (
         <div className="signup">
             <form>
                 <h1>Sign In</h1>
-                <input ref = {emailRef} placeholder="Email" type="email" autoFocus required/>
+                <br />
+                <input ref = {emailRef} placeholder="Email" type="email" value={email}
+          onChange={(e) => setEmail(e.target.value)} autoFocus required/>
                 <input ref = {passwordRef} placeholder="Password" type={passwordShown ? "text" : "password"} minLength ='4' maxLength="16" required/>
                 <span className="flex-container">
                 <i className={passwordShown ? "far fa-eye" : "far fa-eye-slash"} id="eye" onClick={togglePasswordVisiblity}></i> </span>
                 <button type="submit" onClick={signIn}>Sign In</button>
+                <span className ="forgotpass" onClick={() => sendPasswordResetEmail(email)}>Forgot Password?</span>
                 <h4><span className="Signup__gray">New to Netflix?</span><span className="Signup__Link" onClick={register}>Sign Up Now</span><br />(fill up the above details and click sign up now to register)</h4>
             </form>
         </div>

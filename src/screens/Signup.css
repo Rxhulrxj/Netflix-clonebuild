@@ -23,7 +23,7 @@
     margin-bottom: 14px;
     border-radius:5px;
     border: none;
-    padding: 5px 15px;
+    padding: 10px 15px;
     display:flex;
     position: relative;
 }
@@ -45,6 +45,15 @@
     cursor: pointer;
     text-decoration: underline;
 }
+.forgotpass{
+    text-decoration: underline;
+    padding: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.forgotpass:hover{
+    opacity: 2;
+}
 .flex-container{
     position: absolute;
     display: flex;
@@ -64,7 +73,7 @@
         right: 25%;
     }
   }
-  @media (max-width: 1920px) and (min-width: 811px) {
+  @media (max-width: 1920px) and (min-width: 868px) {
     .flex-container {
         top: 45%;
         right: 43%;

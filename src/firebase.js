@@ -1,6 +1,6 @@
 // v9 compat packages are API compatible with v8 code
 import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
+import  'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 
@@ -16,6 +16,13 @@ const firebaseConfig = {
   const firebaseApp =firebase.initializeApp(firebaseConfig);
   const db = firebaseApp.firestore();
   const auth = firebase.auth();
-
-  export {auth};
+  const sendPasswordResetEmail = async (email) => {
+    try {
+      await auth.sendPasswordResetEmail(email);
+      alert("Password reset link sent!");
+    } catch (err) {
+      alert(err.message);
+    }
+  };
+  export {auth , sendPasswordResetEmail};
   export default db;
