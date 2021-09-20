@@ -11,8 +11,10 @@ function SignUp() {
         auth.createUserWithEmailAndPassword(
             emailRef.current.value,
             passwordRef.current.value
-        ).then((authUser) => {
-            console.log(authUser);
+        ).then((userCredential) => {
+            userCredential.user.sendEmailVerification();
+            auth.signOut();
+            alert("Verification Link has been sent to the Email.Please verify and login.");
 
         }).catch((error) => {
             alert(error.message);
@@ -25,8 +27,8 @@ function SignUp() {
         auth.signInWithEmailAndPassword(
             emailRef.current.value,
             passwordRef.current.value
-        ).then((authUser) => {
-            console.log(authUser);
+        ).then(() => {
+            console.log(".");
         }).catch((error) =>
             alert(error.message));
     };
