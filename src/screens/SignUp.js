@@ -42,7 +42,8 @@ return (
                 <h1>Sign In</h1>
                 <input ref = {emailRef} placeholder="Email" type="email" autoFocus required/>
                 <input ref = {passwordRef} placeholder="Password" type={passwordShown ? "text" : "password"} minLength ='4' maxLength="16" required/>
-                <i className={passwordShown ? "far fa-eye-slash" : "far fa-eye"} id="eye" onClick={togglePasswordVisiblity}></i>
+                <span className="flex-container">
+                <i className={passwordShown ? "far fa-eye-slash" : "far fa-eye"} id="eye" onClick={togglePasswordVisiblity}></i> </span>
                 <button type="submit" onClick={signIn}>Sign In</button>
                 <h4><span className="Signup__gray">New to Netflix?</span><span className="Signup__Link" onClick={register}>Sign Up Now</span><br />(fill up the above details and click sign up now to register)</h4>
             </form>

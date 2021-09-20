@@ -45,13 +45,40 @@
     cursor: pointer;
     text-decoration: underline;
 }
-#eye{
+.flex-container{
     position: absolute;
     display: flex;
     top: 45%;
-    right: 35%;
+    right: 43%;
+    padding: auto;
+    margin: 0 auto;
     font-weight: 600;
     cursor: pointer;
     color: #000;
+    margin-Left: "30%",
 
 }
+@media (max-width: 800px) and (min-width: 401px) {
+    .flex-container {
+        top: 45%;
+        right: 25%;
+    }
+  }
+  @media (max-width: 1920px) and (min-width: 811px) {
+    .flex-container {
+        top: 45%;
+        right: 43%;
+    }
+  }
+  @media (max-width: 400px) {
+    .flex-container {
+        top: 42%;
+        right: 23%;
+    }
+  }
+  @media (max-width: 2560px) and (min-width: 1921px) {
+    .flex-container {
+        top: 45%;
+        right: 45%;
+    }
+  }
