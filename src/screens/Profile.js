@@ -4,9 +4,13 @@ import {selectUser} from '../features/counter/userSlice';
 import NavBar from '../Components/NavBar/NavBar';
 import "../screens/Profile.css";
 import { auth } from '../firebase';
-
+import { useHistory } from "react-router-dom";
 function Profile() {
     const user = useSelector(selectUser);
+    const history = useHistory();
+    const handleRoute = () =>{ 
+        history.push("/");
+      }
     return (
         <div className="profile">
             <NavBar />
@@ -50,7 +54,14 @@ function Profile() {
                      </div>
                 </div>
             </div>
+            <div class="callout">
+            <div class="callout-header">HELLO 🙂</div>
+                       <div class="callout-container">
+                              <p>Click <span className="CALLhome" onClick ={handleRoute}>Home</span> to go to the main page.</p>
+                        </div>
+</div>
         </div>
+
     )
 }
 

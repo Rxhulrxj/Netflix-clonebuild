@@ -8,7 +8,7 @@ function Login() {
             <div className="Login_screen">
               <div className="loginscreen nav">
                   <img className="login_logo" src="https://github.com/darwin619/Netflix-Clone/blob/master/src/Assets/logo.png?raw=true" alt="background"></img>
-                  <button onClick={() => setSignIn(true)} className="button_signin">Sign In</button>
+                  <button onClick={() => setSignIn(true)} className="button_signin" title="New to Netflix Click here or you have already have account sign in here">Register/Sign In</button>
                   <div className="loginscreen_gradient"></div>
 
               </div>
@@ -22,9 +22,9 @@ function Login() {
                   <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
                   <div className="loginscreen__input">
                       <form>
-                          <input type="email" placeholder="Email address"/>
+                          <input type="email" placeholder="Email address" disabled/>
                           <button onClick={() => setSignIn(true)} 
-                          className="email__button">GET STARTED</button>
+                          className="email__button" title="Let's get Started 🥳">GET STARTED</button>
                       </form>
                   </div>
                 </>

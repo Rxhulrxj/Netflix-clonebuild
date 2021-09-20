@@ -49,7 +49,7 @@ return (
                 <i className={passwordShown ? "far fa-eye" : "far fa-eye-slash"} id="eye" onClick={togglePasswordVisiblity}></i> </span>
                 <button type="submit" onClick={signIn}>Sign In</button>
                 <span className ="forgotpass" onClick={() => sendPasswordResetEmail(email)}>Forgot Password?</span>
-                <h4><span className="Signup__gray">New to Netflix?</span><span className="Signup__Link" onClick={register}>Sign Up Now</span><br />(fill up the above details and click sign up now to register)</h4>
+                <h4><span className="Signup__gray">New to Netflix?</span><span className="Signup__Link" onClick={register}>Sign Up Now</span><br /><strong>📢(fill up the above details and click sign up now to register)</strong></h4>
             </form>
         </div>
     )
