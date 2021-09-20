@@ -6,7 +6,7 @@
     background-color:rgba(0,0,0.85);
 }
 .signup > form{
-    display: grid;
+    display: flex;
     flex-direction: column;
 }
 .signup > form > h1{
@@ -24,6 +24,8 @@
     border-radius:5px;
     border: none;
     padding: 5px 15px;
+    display:flex;
+    position: relative;
 }
 .signup > form > button{
     padding: 16px 20px;
@@ -42,4 +44,15 @@
 .Signup__Link{
     cursor: pointer;
     text-decoration: underline;
+}
+#eye{
+    position: absolute;
+    display: flex;
+    top: 48%;
+    right: 36%;
+    z-index: 1;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+
 }
