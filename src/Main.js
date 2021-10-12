@@ -9,11 +9,13 @@ import {useDispatch, useSelector} from "react-redux";
 import {login ,logout ,selectUser} from "./features/counter/userSlice";
 import Movie from './screens/Movie';
 import Tv from './screens/Tv';
+import Spinner from "react-spinkit";
+import {useAuthState} from "react-firebase-hooks/auth";
 
   function Main() {
-      const user = useSelector(selectUser);
+    //   const user = useSelector(selectUser);
       const dispatch = useDispatch();
-
+      const[user ,loading] = useAuthState(auth);
       useEffect(() => {
           const unsubscribe =auth.onAuthStateChanged((userAuth) =>{
               if(userAuth){
@@ -30,6 +32,16 @@ import Tv from './screens/Tv';
           });
           return unsubscribe;
       },[dispatch]);
+      if(loading) {
+        return(
+          <div className="AppLoading">
+            <div className="AppLoadingContents">
+            <Spinner name="line-scale-pulse-out-rapid" color="purple" fadeIn="none"/>
+            </div>
+          </div>
+          
+        )
+      }
       return(
           <div className="MAIN">
               <Router>

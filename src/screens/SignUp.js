@@ -29,7 +29,7 @@ function SignUp() {
             emailRef.current.value,
             passwordRef.current.value
         ).then(() => {
-            console.log(".");
+            
         }).catch((error) =>
             alert(error.message));
     };
